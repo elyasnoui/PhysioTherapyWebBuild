@@ -83,7 +83,7 @@ Images & icons are placeholders and should be replaced with licensed or original
 For custom development or support:
 
 **Billel & Elyas Digital**  
-📧 elyas.noui@outlook.com
+📧 elyas.noui@outlook.com  
 📧 billel.damouche@outlook.com
 
 ---
