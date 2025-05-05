@@ -1,24 +1,14 @@
-
-
-
-
-/*
-  Template Name: La Notte - Nail Salon HTML5 Template
-  Theme URL: https://themeforest.net/user/dsathemes
-  Description: La Notte - Nail Salon HTML5 Template
-  Author: DSAThemes
-  Author URL: https://themeforest.net/user/dsathemes
-  Version: 1.0.0
-  Website: www.dsathemes.com
-  Tags: DSAThemes, Beauty, Salon, Beauty Parlour, Nails, Manicure, Pedicure, Care, Health, Massage
-*/
-
-
-
-
 /* ==========================================================================
   01. GENERAL & BASIC STYLES
   =========================================================================== */
+
+  :root {
+    --primary-color: #2a9d8f; /* Calming teal for primary elements */
+    --secondary-color: #e76f51; /* Warm coral for accents and highlights */
+    --accent-color: #f4a261; /* Soft orange for complementary accents */
+    --text-dark: #264653; /* Deep blue-green for text */
+    --text-muted: #8d99ae; /* Muted gray-blue for secondary text */
+  }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -27,7 +17,7 @@ html {
 
 body {
   font-family: 'Catamaran', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #6c757d;
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -334,8 +324,8 @@ body {
 .bg--mint-cream { background-color: #e7eeec; }
 .bg--moccasin { background-color: #f5f0ef; }
 .bg--papaya { background-color: #fff6f3; }
-.bg--plum { background-color: #d07ea7; }
-.bg--rose { background-color: #fd1c79; }
+.bg--plum { background-color: var(--accent-color); }
+.bg--rose { background-color: var(--secondary-color); }
 .bg--steel-blue { background-color: #c1c9d0; }
 .bg--tiny-pink { background-color: #fff1f6; }
 .bg--violet { background-color: #912d8e; }
@@ -357,7 +347,7 @@ body {
 .mint-cream--shape:after { background-color: #e7eeec; }
 .moccasin--shape:after { background-color: #f5f0ef; }
 .papaya--shape:after { background-color: #fff6f3; }
-.plum--shape:after { background-color: #d07ea7; }
+.plum--shape:after { background-color: var(--accent-color); }
 .steel-blue--shape:after { background-color: #c1c9d0; }
 .tiny-pink--shape:after { background-color: #fff1f6; }
 .white-smoke--shape:after { background-color: #f5f1f2; }
@@ -383,7 +373,7 @@ body {
   =========================================================================== */
 
 h6, h5, h4, h3, h2, h1 {  
-  color: #373b4d;
+  color: var(--text-dark);
   font-family: 'Lora', serif;
   line-height: 1.3;
   font-weight: 600;
@@ -451,7 +441,7 @@ p.p-title-xl { font-size: 1.5625rem; }  /* 25px */
 /*------------------------------------------*/
 
 a {
-  color: #6c757d;
+  color: var(--text-muted);
   text-decoration: none;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -461,8 +451,9 @@ a {
 }
 
 a:hover {
-  color: #666;
+  color: var(--accent-color);
   text-decoration: none;
+  transform: translateY(-5px);
 }
 
 a:focus {
@@ -483,7 +474,7 @@ p.tra-link {
 }
 
 p.tra-link a {
-  color: #373b4d; 
+  color: var(--text-dark); 
   position: relative;
   padding-bottom: 6px;
   text-decoration: none;
@@ -491,7 +482,7 @@ p.tra-link a {
 
 p.tra-link a:after {
   content: '';
-  background-color: #373b4d;
+  background-color: var(--text-dark);
   height: 2px;
   width: 60%;
   width: 100%;
@@ -512,7 +503,7 @@ p.tra-link a:hover:after {
 p.deep-blue--color.tra-link a, 
 h5.deep-blue--color.sbox-link a, 
 .blog-post-txt h5.deep-blue--color a { 
-  color: #204e5b; 
+  color: var(--primary-color); 
 }
 
 p.deep-brown--color.tra-link a, 
@@ -523,7 +514,7 @@ h5.deep-brown--color.sbox-link a,
 
 p.deep-blue--color.tra-link a:after, 
 h5.deep-blue--color.sbox-link a:after { 
-  background-color: #204e5b; 
+  background-color: var(--primary-color); 
 }
 
 p.deep-brown--color.tra-link a:after, 
@@ -675,7 +666,7 @@ ol.digit-list p {
 .white--hover:hover,
 .white--color .white--btn,
 .scroll .white--hover:hover {
-  color: #373b4d!important;
+  color: var(--text-dark)!important;
   background-color: #fff;
   border-color: #fff!important;
 }
@@ -691,9 +682,9 @@ ol.digit-list p {
 
 .scroll .tra-white--btn,
 .scroll .tra-white--hover:hover {
-  color: #373b4d!important;
+  color: var(--text-dark)!important;
   background-color: transparent;
-  border-color: #373b4d!important;
+  border-color: var(--text-dark)!important;
 }
 
 .black--btn,
@@ -704,8 +695,8 @@ ol.digit-list p {
 .scroll .black--hover:hover,
 .white--color .black--hover:hover {
   color: #fff!important;
-  background-color: #373b4d;
-  border-color: #373b4d!important;
+  background-color: var(--text-dark);
+  border-color: var(--text-dark)!important;
 }
 
 .tra-black--btn,
@@ -713,9 +704,9 @@ ol.digit-list p {
 .white--color .tra-black--btn,
 .scroll .tra-black--hover:hover,
 .white--color .tra-black--hover:hover {
-  color: #373b4d!important;;
+  color: var(--text-dark)!important;;
   background-color: transparent;
-  border-color: #373b4d!important;
+  border-color: var(--text-dark)!important;
 }
 
 .grey--btn, 
@@ -727,21 +718,21 @@ ol.digit-list p {
 
 .tra-grey--btn, 
 .white--color .tra-grey--btn {
-  color: #373b4d;
+  color: var(--text-dark);
   background-color: transparent;
   border-color: #ccc!important;
 }
 
 .grey--hover:hover,
 .scroll .grey--hover:hover {
-  color: #373b4d!important;
+  color: var(--text-dark)!important;
   background-color: rgba(17, 36, 70, .04);
   border-color: rgba(17, 36, 70, .02)!important;
 }
 
 .tra-grey--hover:hover,
 .scroll .tra-grey--hover:hover {
-  color: #373b4d!important;
+  color: var(--text-dark)!important;
   background-color: transparent;
   border-color: #ccc!important;
 }
@@ -775,8 +766,8 @@ ol.digit-list p {
 .scroll .deep-blue--hover:hover, 
 .white--color .deep-blue--hover:hover {
   color: #fff!important;
-  background-color: #204e5b;
-  border-color: #204e5b!important;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color)!important;
 }
 
 .tra-deep-blue--btn, 
@@ -785,9 +776,9 @@ ol.digit-list p {
 .tra-deep-blue--hover:hover, 
 .scroll .tra-deep-blue--hover:hover, 
 .white--color .tra-deep-blue--hover:hover {
-  color: #204e5b!important;
+  color: var(--primary-color)!important;
   background-color: transparent;
-  border-color: #204e5b!important;
+  border-color: var(--primary-color)!important;
 }
 
 .violet-red--btn, 
@@ -819,8 +810,8 @@ ol.digit-list p {
 .scroll .plum--hover:hover, 
 .white--color .plum--hover:hover {
   color: #fff!important;
-  background-color: #d07ea7;
-  border-color: #d07ea7!important;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color)!important;
 }
 
 .tra-plum--btn, 
@@ -829,9 +820,9 @@ ol.digit-list p {
 .tra-plum--hover:hover, 
 .scroll .tra-plum--hover:hover, 
 .white--color .tra-plum--hover:hover {
-  color: #d07ea7!important;
+  color: var(--accent-color)!important;
   background-color: transparent;
-  border-color: #d07ea7!important;
+  border-color: var(--accent-color)!important;
 }
 
 .red--btn, 
@@ -863,8 +854,8 @@ ol.digit-list p {
 .scroll .rose--hover:hover, 
 .white--color .rose--hover:hover {
   color: #fff!important;
-  background-color: #fd1c79;
-  border-color: #fd1c79!important;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color)!important;
 }
 
 .tra-rose--btn, 
@@ -873,9 +864,9 @@ ol.digit-list p {
 .tra-rose--hover:hover, 
 .scroll .tra-rose--hover:hover, 
 .white--color .tra-rose--hover:hover {
-  color: #fd1c79!important;
+  color: var(--secondary-color)!important;
   background-color: transparent;
-  border-color: #fd1c79!important;
+  border-color: var(--secondary-color)!important;
 }
 
 /*------------------------------------------*/
@@ -1203,7 +1194,7 @@ ol.digit-list p {
 .black--color li, 
 .black--color i, 
 .black--color span,
-.white--color .black--color { color: #373b4d; }
+.white--color .black--color { color: var(--text-dark); }
 
 .deep-brown--color,
 .deep-brown--color h2, 
@@ -1229,7 +1220,7 @@ ol.digit-list p {
 .deep-blue--color li, 
 .deep-blue--color i,
 .deep-blue--color span, 
-.white--color .deep-blue--color { color: #204e5b; }
+.white--color .deep-blue--color { color: var(--primary-color); }
 
 .violet-red--color,
 .violet-red--color h2, 
@@ -1255,7 +1246,7 @@ ol.digit-list p {
 .plum--color li, 
 .plum--color i,
 .plum--color span, 
-.white--color .plum--color { color: #d07ea7; }
+.white--color .plum--color { color: var(--accent-color); }
 
 .rose--color,
 .rose--color h2, 
@@ -1268,7 +1259,7 @@ ol.digit-list p {
 .rose--color li, 
 .rose--color i, 
 .rose--color span,
-.white--color .rose--color { color: #fd1c79; }
+.white--color .rose--color { color: var(--secondary-color); }
 
 /*------------------------------------------*/
 /*  MORE BUTTON
@@ -1503,12 +1494,12 @@ ol.digit-list p {
 .spinner .move-blob { background: #f08080; }
 
 #loading.plum-loading { background-color: #f7f5f3; }
-.plum-loading .spinner .blob { border: 2px solid #d07ea7; }
-.plum-loading .spinner .move-blob { background: #d07ea7; }
+.plum-loading .spinner .blob { border: 2px solid var(--accent-color); }
+.plum-loading .spinner .move-blob { background: var(--accent-color); }
 
 #loading.rose-loading { background-color: #f0f0f2; }
-.rose-loading .spinner .blob { border: 2px solid #fd1c79; }
-.rose-loading .spinner .move-blob { background: #fd1c79; }
+.rose-loading .spinner .blob { border: 2px solid var(--secondary-color); }
+.rose-loading .spinner .move-blob { background: var(--secondary-color); }
 
 #loading.violet-red-loading { background-color: #f7f5f3; }
 .violet-red-loading .spinner .blob { border: 2px solid #da3b85; }
@@ -1869,6 +1860,23 @@ ol.digit-list p {
 .logo-white, 
 .logo-black {
   display: block;
+}
+
+.logo-text {
+  margin-left: 15px;
+  font-size: larger;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Style for logo-text inside .logo-black */
+.logo-black .logo-text {
+  color: #000; /* Black text */
+}
+
+/* Style for logo-text inside .logo-white */
+.logo-white .logo-text {
+  color: #fff; /* White text */
 }
 
 .navbar-light .logo-black,
@@ -2404,7 +2412,7 @@ ol.digit-list p {
 }
 
 .table-rounded.deepblue-border {
-  border: 2px solid #204e5b;
+  border: 2px solid var(--primary-color);
 }
 
 .txt-table h5 {
@@ -4734,6 +4742,10 @@ select:-webkit-autofill:focus {
 .footer-info a,
 .footer-contacts a {
   text-decoration: underline;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-info h5.booking-link {
@@ -4855,7 +4867,7 @@ select:-webkit-autofill:focus {
 /*------------------------------------------*/
 
 .footer-form .form-control:focus {
-  border: 1px solid #373b4d;
+  border: 1px solid var(--text-dark);
   border-right: none;
   outline: 0;
   box-shadow: none;
@@ -4865,9 +4877,9 @@ select:-webkit-autofill:focus {
 /*  Footer Form Placeholder
 /*------------------------------------------*/
 
-.footer-form .form-control::-moz-placeholder { color: #6c757d; } 
-.footer-form .form-control:-ms-input-placeholder { color: #6c757d; } 
-.footer-form .form-control::-webkit-input-placeholder { color: #6c757d; } 
+.footer-form .form-control::-moz-placeholder { color: var(--text-muted); } 
+.footer-form .form-control:-ms-input-placeholder { color: var(--text-muted); } 
+.footer-form .form-control::-webkit-input-placeholder { color: var(--text-muted); } 
 
 /*------------------------------------------*/
 /*  Newsletter Form Button
