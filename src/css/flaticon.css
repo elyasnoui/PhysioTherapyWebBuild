@@ -511,3 +511,15 @@ span[class^="flaticon-"]:before, span[class*=" flaticon-"]:before {
 .flaticon-gift:before {
     content: "\f1a4";
 }
+.flaticon-rehabilitation:before {
+    content: "\f1a5";
+}
+.flaticon-cramps:before {
+    content: "\f1a6";
+}
+.flaticon-surgery-room:before {
+    content: "\f1a7";
+}
+.flaticon-physical-therapy:before {
+    content: "\f1a8";
+}

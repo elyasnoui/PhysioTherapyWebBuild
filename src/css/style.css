@@ -4670,6 +4670,7 @@ select:-webkit-autofill:focus {
   padding: 0px 0px 85%;
   height: 0px;
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 #gmap .google-map,
@@ -4692,7 +4693,13 @@ select:-webkit-autofill:focus {
   border:0;
 }
 
+.google-map:hover {
+  transform: scale(1.05);
+}
 
+.footer-img {
+  transform: translateY(-26px);
+}
 
 
 /* ==========================================================================
@@ -4742,7 +4749,7 @@ select:-webkit-autofill:focus {
 .footer-info a,
 .footer-contacts a {
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5301,4 +5308,18 @@ nav a#pull {
 }
 
 
+#services-5 .sbox-5 {
+  transition: transform 0.3s ease;
+}
 
+#services-5 .sbox-5:hover {
+  transform: translateY(-10px);
+}
+
+#services-5 .sbox-5 .sbox-ico span {
+  transition: color 0.3s ease;
+}
+
+#services-5 .sbox-5:hover .sbox-ico span {
+  color: var(--accent-color);
+}
