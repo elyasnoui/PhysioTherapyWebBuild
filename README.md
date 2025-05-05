@@ -4,7 +4,7 @@ A responsive, multi-page website template built with HTML, CSS, and JavaScript, 
 
 ## Live Preview
 
-> (Optional: Add live link here if hosted on GitHub Pages, Netlify, Vercel, etc.)
+> (Optional: Add live link here if hosted on GitHub Pages, Netlify, Vercel, etc.)  
 > Coming Soon!
 
 ---
@@ -82,8 +82,8 @@ Images & icons are placeholders and should be replaced with licensed or original
 
 For custom development or support:
 
-**Billel & Elyas Digital**  
-📧 elyas.noui@outlook.com
+**Nexora Limited**  
+📧 elyas.noui@outlook.com  
 📧 billel.damouche@outlook.com
 
 ---
