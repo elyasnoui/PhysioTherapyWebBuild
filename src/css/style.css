@@ -3,12 +3,13 @@
   =========================================================================== */
 
   :root {
-    --primary-color: #2a9d8f; /* Calming teal for primary elements */
-    --secondary-color: #e76f51; /* Warm coral for accents and highlights */
-    --accent-color: #f4a261; /* Soft orange for complementary accents */
-    --text-dark: #264653; /* Deep blue-green for text */
-    --text-muted: #8d99ae; /* Muted gray-blue for secondary text */
+    --primary-color: #f4c77ad8; /* Elegant cream inspired by the soft wall lighting */
+    --secondary-color: #866a4e; /* Warm mocha for accents */
+    --accent-color: #b3a592; /* Soft ivory for complementary accents */
+    --text-dark: #4f4034; /* Rich espresso for primary text */
+    --text-muted: #9c8f7a; /* Muted stone for secondary text */
   }
+  
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -2063,10 +2064,27 @@ ol.digit-list p {
 /*------------------------------------------*/
 
 #hero-3 {
-  background-image: url(../images/hero-3.jpg);
+  background-image: url(../images/heros/hero-1.jpg);
   padding-top: 175px;
   padding-bottom: 125px;
-} 
+  position: relative;
+}
+
+#hero-3:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#hero-3 .container {
+  position: relative;
+  z-index: 2;
+}
 
 .hero-3-txt h2 {
   font-size: 4.35rem;
@@ -3714,7 +3732,7 @@ h5.pbox-link a:after {
 }
 
 #banner-3 {
-  background-image: url(../images/banner-3.jpg);
+  background-image: url(../images/banners/banner-3.jpg);
 }
 
 #banner-4 {
